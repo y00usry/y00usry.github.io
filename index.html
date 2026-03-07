@@ -14,7 +14,8 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <!-- <li><a href="#projects">Projects</a></li> -->
                     <li><a href="#contact">Contact</a></li>
                     <li>
                         <button id="theme-toggle" aria-label="Toggle Dark Mode">
@@ -52,18 +53,27 @@
                     I value clean code, automated testing, and pragmatic design decisions. I've worked with various technologies but my core expertise lies in Java, JavaScript, C/C++, and Cloud Infrastructure.
                 </p>
             </div>
-            
-            <div class="skills-section" style="margin-top: 3rem;">
-                <h3 style="margin-bottom: 1.5rem;">Technical Skills</h3>
-                
+            </section>
+
+            <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <div class="skills-section">                
                 <div style="margin-bottom: 2rem;">
                     <h4 style="margin-bottom: 1rem; font-size: 1rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Languages</h4>
                     <div class="skills-grid">
                         <div class="skill-item">Java</div>
                         <div class="skill-item">Python</div>
-                        <div class="skill-item">JavaScript/TypeScript</div>
+                        <div class="skill-item">TypeScript</div>
                         <div class="skill-item">C/C++</div>
                         <div class="skill-item">SQL</div>
+                        <div class="skill-item">PL/SQL</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                        <div class="skill-item">Bash</div>
+                        <div class="skill-item">Zsh</div>
+                        <div class="skill-item">Shell</div>
                     </div>
                 </div>
 
@@ -84,6 +94,11 @@
                         <div class="skill-item">GCP</div>
                         <div class="skill-item">AWS</div>
                         <div class="skill-item">Docker</div>
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">GitHub</div>
+                        <div class="skill-item">GitHub Actions</div>
+                        <div class="skill-item">CI/CD</div>
+                        <div class="skill-item">Linux</div>
                     </div>
                 </div>
 
@@ -92,10 +107,10 @@
                     <div class="skills-grid">
                         <div class="skill-item">MySQL</div>
                         <div class="skill-item">PostgreSQL</div>
+                        <div class="skill-item">Oracle</div>
+                        <div class="skill-item">MongoDB</div>
                         <div class="skill-item">Redis</div>
-                        <div class="skill-item">Git</div>
-                        <div class="skill-item">GitHub</div>
-                        <div class="skill-item">CI/CD</div>
+                        <div class="skill-item">SQLite</div>
                     </div>
                 </div>
             </div>
@@ -150,7 +165,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Mohamed Yousry. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Mohamed Yousry. All rights reserved.</p>
+            <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
         </div>
     </footer>
 
