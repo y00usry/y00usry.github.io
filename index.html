@@ -1,237 +1,846 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio of Muhammad Yusry, a Software Engineer specializing in scalable distributed systems.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Muhammad Yusry, a Software Engineer specializing in scalable distributed systems."
+    />
     <title>Mohamed Yousry | Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="hero-bg-glow"></div>
+    <div class="hero-bg-glow glow-2"></div>
     <header>
-        <div class="container nav-inner">
-            <a href="#" class="logo">y00usry.github.io</a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <!-- <li><a href="#projects">Projects</a></li> -->
-                    <li><a href="#contact">Contact</a></li>
-                    <li>
-                        <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="5"></circle>
-                                <line x1="12" y1="1" x2="12" y2="3"></line>
-                                <line x1="12" y1="21" x2="12" y2="23"></line>
-                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                                <line x1="1" y1="12" x2="3" y2="12"></line>
-                                <line x1="21" y1="12" x2="23" y2="12"></line>
-                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                            </svg>
-                            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container nav-inner">
+        <a href="#" class="logo">MoYousryAboulhoda.github.io</a>
+        <nav style="display: flex; align-items: center; gap: 1rem">
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Career Highlights</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <svg
+              class="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
-        <section id="hero" class="hero">
-            <span class="mono">Hi, my name is</span>
-            <h1>Mohamed Yousry.<br><span style="color: var(--text-muted);">I build scalable, maintainable, and
-                    reliable systems.</span>
-            </h1>
-            <p class="bio">
-                I'm a software engineer specializing in backend systems, cloud architecture, and high-performance
-                applications. Currently focused on building resilient and reliable systems at scale. I enjoy solving
-                complex problems and learning new technologies. I'm passionate about building software that makes a
-                difference.
-            </p>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <!-- <a href="#projects" class="btn">View Projects</a> -->
-                <a href="https://github.com/y00usry" target="_blank" class="btn btn-outline">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                        </path>
+      <section id="hero" class="hero">
+        <span class="mono">Hi, my full name is</span>
+        <h2 class="gradient-text">Mohamed Yousry Mahmoud Aboulhoda.</h2>
+        <h3 class="subtitle">
+          Software Development Engineer | Backend Developer | Full-Stack
+          Developer
+        </h3>
+        <div
+          style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem"
+        >
+          <a href="#projects" class="btn">View Projects</a>
+          <a
+            href="assets/Mohamed-Yousry-Software-Engineer.pdf"
+            target="_blank"
+            class="btn btn-outline"
+            download
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download CV
+          </a>
+        </div>
+        <p class="bio">
+          I'm a software engineer with 5+ years of experience specializing in
+          backend systems, cloud architecture, and high-performance
+          applications. Currently focused on building resilient and reliable
+          systems at scale. I enjoy solving complex problems and learning new
+          technologies. I'm passionate about building software that makes a
+          difference.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap">
+          <a
+            href="https://github.com/moyousryaboulhoda"
+            target="_blank"
+            class="btn btn-outline"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/moyousryaboulhoda"
+            target="_blank"
+            class="btn btn-outline"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+          <a
+            href="https://x.com/in/y00usry"
+            target="_blank"
+            class="btn btn-outline"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+            </svg>
+
+            X
+          </a>
+          <a
+            href="https://www.youtube.com/@MoYousryAboulhoda"
+            target="_blank"
+            class="btn btn-outline"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect
+                x="2.5"
+                y="4"
+                width="19"
+                height="16"
+                rx="4.5"
+                ry="4.5"
+              ></rect>
+              <polygon points="10 9 15 12 10 15 10 9"></polygon>
+            </svg>
+
+            Youtube
+          </a>
+          <a href="https://t.me/y00usry" target="_blank" class="btn btn-outline"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21.5 2L2 11.5l6.5 2.5 3 6.5 3.5-5.5 5.5 3.5z"></path>
+              <path d="M8.5 14l3.5-3.5"></path>
+            </svg>
+
+            Telegram
+          </a>
+          <a
+            href="https://discord.com/users/y00usry"
+            target="_blank"
+            class="btn btn-outline"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M18 5a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3c0 7-1.5 10-1.5 10l2 2h2s1-1.5 1.5-2h4c.5.5 1.5 2 1.5 2h2l2-2S18 12 18 5z"
+              />
+              <circle cx="9" cy="11" r="1" />
+              <circle cx="15" cy="11" r="1" />
+            </svg>
+
+            Discord
+          </a>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <div style="max-width: 700px">
+          <p>
+            I am a passionate engineer with a strong foundation in computer
+            science and a knack for solving complex problems. My journey began
+            with a curiosity about how things work under the hood, which led me
+            to explore operating systems, networking, and eventually,
+            large-scale distributed systems.
+          </p>
+          <p>
+            I value clean code, automated testing, and pragmatic design
+            decisions. I've worked with various technologies but my core
+            expertise lies in Java, JavaScript, C/C++, and Cloud Infrastructure.
+          </p>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2>Career Highlights</h2>
+        <p style="margin-bottom: 2rem">
+          A collection of photos and videos from my career days to remember, and
+          certificates of courses that I've taken.
+        </p>
+        <div class="gallery-wrapper">
+          <button
+            class="gallery-nav-btn prev"
+            id="gallery-prev"
+            aria-label="Previous"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <div class="gallery-track-container">
+            <div class="gallery-track" id="gallery-track">
+              <!-- Gallery Item 1 (Photo) -->
+              <article class="gallery-item">
+                <div class="gallery-media">
+                  <!-- Replace src with your image path -->
+                  <img
+                    src="./assets/career-highlights/00.jpg"
+                    alt="Team Collaboration"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="gallery-info">
+                  <h3>Team Offsite 2023</h3>
+                  <p>
+                    Great time collaborating and building team spirit at the
+                    annual company offsite. Discussing new system architectures.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Gallery Item 2 (Photo) -->
+              <article class="gallery-item">
+                <div class="gallery-media">
+                  <!-- Replace src with your image path -->
+                  <img
+                    src="./assets/career-highlights/02.jpg"
+                    alt="Team Collaboration"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="gallery-info">
+                  <h3>Team Offsite 2023</h3>
+                  <p>
+                    Great time collaborating and building team spirit at the
+                    annual company offsite. Discussing new system architectures.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Gallery Item 2 (Video/Presentation) -->
+              <!-- <article class="gallery-item">
+                <div class="gallery-media"> -->
+                  <!-- Replace src with your video thumbnail path or a video tag -->
+                  <!-- <img
+                    src="./assets/career-highlights/01.jpg"
+                    alt="Presentation"
+                    loading="lazy"
+                  />
+                  <div class="play-button-overlay">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      style="margin-left: 4px"
+                    >
+                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
                     </svg>
-                    GitHub
-                </a>
-                <a href="https://linkedin.com/in/y00usry" target="_blank" class="btn btn-outline">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                    LinkedIn
-                </a>
-                <a href="assets/Mohamed-Yousry-Software-Engineer.pdf" target="_blank" class="btn btn-outline" download>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                    Download CV
-                </a>
+                  </div>
+                </div>
+                <div class="gallery-info">
+                  <h3>Tech Talk Presentation</h3>
+                  <p>
+                    Presenting our new distributed architecture and rate
+                    limiting implementation to the engineering department.
+                  </p>
+                </div>
+              </article> -->
+
+              <!-- Gallery Item 3 (Photo) -->
+              <article class="gallery-item">
+                <div class="gallery-media">
+                  <!-- Replace src with your image path -->
+                  <img
+                    src="./assets/career-highlights/03.jpg"
+                    alt="Hackathon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="gallery-info">
+                  <h3>Hackathon Winners</h3>
+                  <p>
+                    First place at the Q3 internal hackathon for developing an
+                    AI-driven log analysis tool to detect anomalies.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Gallery Item 4 (Photo) -->
+              <article class="gallery-item">
+                <div class="gallery-media">
+                  <!-- Replace src with your image path -->
+                  <img
+                    src="./assets/career-highlights/04.jpg"
+                    alt="Hackathon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="gallery-info">
+                  <h3>Hackathon Winners</h3>
+                  <p>
+                    First place at the Q3 internal hackathon for developing an
+                    AI-driven log analysis tool to detect anomalies.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Gallery Item 5 (Photo) -->
+              <article class="gallery-item">
+                <div class="gallery-media">
+                  <!-- Replace src with your image path -->
+                  <img
+                    src="./assets/career-highlights/05.jpg"
+                    alt="Hackathon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="gallery-info">
+                  <h3>Hackathon Winners</h3>
+                  <p>
+                    First place at the Q3 internal hackathon for developing an
+                    AI-driven log analysis tool to detect anomalies.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Gallery Item 6 (Photo) -->
+              <article class="gallery-item">
+                <div class="gallery-media">
+                  <!-- Replace src with your image path -->
+                  <img
+                    src="./assets/career-highlights/06.jpg"
+                    alt="Hackathon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="gallery-info">
+                  <h3>Hackathon Winners</h3>
+                  <p>
+                    First place at the Q3 internal hackathon for developing an
+                    AI-driven log analysis tool to detect anomalies.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Gallery Item 7 (Photo) -->
+              <article class="gallery-item">
+                <div class="gallery-media">
+                  <!-- Replace src with your image path -->
+                  <img
+                    src="./assets/career-highlights/07.jpg"
+                    alt="Hackathon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="gallery-info">
+                  <h3>Hackathon Winners</h3>
+                  <p>
+                    First place at the Q3 internal hackathon for developing an
+                    AI-driven log analysis tool to detect anomalies.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Gallery Item 8 (Photo) -->
+              <article class="gallery-item">
+                <div class="gallery-media">
+                  <!-- Replace src with your image path -->
+                  <img
+                    src="./assets/career-highlights/08.jpg"
+                    alt="Hackathon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="gallery-info">
+                  <h3>Hackathon Winners</h3>
+                  <p>
+                    First place at the Q3 internal hackathon for developing an
+                    AI-driven log analysis tool to detect anomalies.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Gallery Item 9 (Photo) -->
+              <article class="gallery-item">
+                <div class="gallery-media">
+                  <!-- Replace src with your image path -->
+                  <img
+                    src="./assets/career-highlights/09.jpg"
+                    alt="Hackathon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="gallery-info">
+                  <h3>Hackathon Winners</h3>
+                  <p>
+                    First place at the Q3 internal hackathon for developing an
+                    AI-driven log analysis tool to detect anomalies.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Gallery Item 10 (Photo) -->
+              <article class="gallery-item">
+                <div class="gallery-media">
+                  <!-- Replace src with your image path -->
+                  <img
+                    src="./assets/career-highlights/10.jpg"
+                    alt="Hackathon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="gallery-info">
+                  <h3>Hackathon Winners</h3>
+                  <p>
+                    First place at the Q3 internal hackathon for developing an
+                    AI-driven log analysis tool to detect anomalies.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Gallery Item 11 (Photo) -->
+              <article class="gallery-item">
+                <div class="gallery-media">
+                  <!-- Replace src with your image path -->
+                  <img
+                    src="./assets/career-highlights/11.jpg"
+                    alt="Hackathon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="gallery-info">
+                  <h3>Hackathon Winners</h3>
+                  <p>
+                    First place at the Q3 internal hackathon for developing an
+                    AI-driven log analysis tool to detect anomalies.
+                  </p>
+                </div>
+              </article>
             </div>
-        </section>
+          </div>
+          <button
+            class="gallery-nav-btn next"
+            id="gallery-next"
+            aria-label="Next"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <div style="max-width: 700px;">
-                <p>
-                    I am a passionate engineer with a strong foundation in computer science and a knack for solving
-                    complex problems. My journey began with a curiosity about how things work under the hood, which led
-                    me to explore operating systems, networking, and eventually, large-scale distributed systems.
-                </p>
-                <p>
-                    I value clean code, automated testing, and pragmatic design decisions. I've worked with various
-                    technologies but my core expertise lies in Java, JavaScript, C/C++, and Cloud Infrastructure.
-                </p>
+      <section id="projects">
+        <h2>Featured Projects</h2>
+        <p style="margin-bottom: 2rem">
+          A selection of software systems and open-source contributions.
+        </p>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <!-- <article class="project-card">
+            <div class="project-media">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Distributed Rate Limiter"
+                loading="lazy"
+              />
             </div>
-        </section>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-
-            <div class="skills-section">
-                <div style="margin-bottom: 2rem;">
-                    <h4
-                        style="margin-bottom: 1rem; font-size: 1rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">
-                        Languages</h4>
-                    <div class="skills-grid">
-                        <div class="skill-item">Java</div>
-                        <div class="skill-item">Python</div>
-                        <div class="skill-item">TypeScript</div>
-                        <div class="skill-item">C/C++</div>
-                        <div class="skill-item">SQL</div>
-                        <div class="skill-item">PL/SQL</div>
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">HTML</div>
-                        <div class="skill-item">CSS</div>
-                        <div class="skill-item">Bash</div>
-                        <div class="skill-item">Zsh</div>
-                        <div class="skill-item">Shell</div>
-                    </div>
-                </div>
-
-                <div style="margin-bottom: 2rem;">
-                    <h4
-                        style="margin-bottom: 1rem; font-size: 1rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">
-                        Frameworks & Libraries</h4>
-                    <div class="skills-grid">
-                        <div class="skill-item">Spring Boot</div>
-                        <div class="skill-item">Node.js</div>
-                        <div class="skill-item">Express</div>
-                        <div class="skill-item">React</div>
-                        <div class="skill-item">Next.js</div>
-                    </div>
-                </div>
-
-                <div style="margin-bottom: 2rem;">
-                    <h4
-                        style="margin-bottom: 1rem; font-size: 1rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">
-                        Infrastructure & Cloud</h4>
-                    <div class="skills-grid">
-                        <div class="skill-item">GCP</div>
-                        <div class="skill-item">AWS</div>
-                        <div class="skill-item">Docker</div>
-                        <div class="skill-item">Git</div>
-                        <div class="skill-item">GitHub</div>
-                        <div class="skill-item">GitHub Actions</div>
-                        <div class="skill-item">CI/CD</div>
-                        <div class="skill-item">Linux</div>
-                    </div>
-                </div>
-
-                <div>
-                    <h4
-                        style="margin-bottom: 1rem; font-size: 1rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">
-                        Data & Tools</h4>
-                    <div class="skills-grid">
-                        <div class="skill-item">MySQL</div>
-                        <div class="skill-item">PostgreSQL</div>
-                        <div class="skill-item">Oracle</div>
-                        <div class="skill-item">MongoDB</div>
-                        <div class="skill-item">Redis</div>
-                        <div class="skill-item">SQLite</div>
-                    </div>
-                </div>
+            <div class="project-info">
+              <h3>Distributed Rate Limiter</h3>
+              <p class="description">
+                A high-performance, distributed rate limiter built using the
+                token bucket algorithm. Designed to handle high-throughput
+                requests for microservices architectures.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Go</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">gRPC</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/moyousryaboulhoda"
+                  class="link-icon"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                  View Code
+                </a>
+              </div>
             </div>
-        </section>
+          </article> -->
 
-        <!-- <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid"> -->
+          <!-- Project 2 -->
+          <!-- <article class="project-card">
+            <div class="project-media">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Cloud Log Analyzer"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Cloud Log Analyzer</h3>
+              <p class="description">
+                A real-time log analysis tool that aggregates logs from multiple
+                cloud providers and identifies anomalies using statistical
+                models.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Elasticsearch</span>
+                <span class="tech-tag">Kafka</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/moyousryaboulhoda"
+                  class="link-icon"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                  View Code
+                </a>
+                <a
+                  href="https://github.com/moyousryaboulhoda"
+                  class="link-icon"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article> -->
+        </div>
+      </section>
 
-        <!-- Project 1 -->
-        <!-- <article class="project-card">
-                    <div class="project-media">
-                        <div class="video-container"> -->
-        <!-- Demo Video: Distributed Systems / Rate Limiter Concept -->
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Name</h3>
-                        <p class="description">
-                            project description
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Go</span>
-                            <span class="tech-tag">Redis</span>
-                            <span class="tech-tag">Docker</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/y00usry" class="link-icon" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                                View Code
-                            </a>
-                            <a href="https://github.com/y00usry" class="link-icon" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </article> -->
+      <section id="skills">
+        <h2>Technical Skills</h2>
 
-        <!-- </div>
-        </section> -->
+        <div class="skills-section">
+          <div style="margin-bottom: 2rem">
+            <h4
+              style="
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                color: var(--text-muted);
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+              "
+            >
+              Languages
+            </h4>
+            <div class="skills-grid">
+              <div class="skill-item">Java</div>
+              <div class="skill-item">Python</div>
+              <div class="skill-item">TypeScript</div>
+              <div class="skill-item">C/C++</div>
+              <div class="skill-item">SQL</div>
+              <div class="skill-item">PL/SQL</div>
+              <div class="skill-item">JavaScript</div>
+              <div class="skill-item">HTML</div>
+              <div class="skill-item">CSS</div>
+              <div class="skill-item">Bash</div>
+              <div class="skill-item">Zsh</div>
+              <div class="skill-item">Shell</div>
+            </div>
+          </div>
 
-        <section id="contact" class="contact-section">
-            <h2>Get In Touch</h2>
-            <p>
-                I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll
-                try my best to get back to you!
-            </p>
-            <a href="mailto:y00usry.dev@gmail.com" class="btn">Say Hello</a>
-        </section>
+          <div style="margin-bottom: 2rem">
+            <h4
+              style="
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                color: var(--text-muted);
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+              "
+            >
+              Frameworks & Libraries
+            </h4>
+            <div class="skills-grid">
+              <div class="skill-item">Spring Boot</div>
+              <div class="skill-item">Node.js</div>
+              <div class="skill-item">Express</div>
+              <div class="skill-item">React</div>
+              <div class="skill-item">Next.js</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 2rem">
+            <h4
+              style="
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                color: var(--text-muted);
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+              "
+            >
+              Infrastructure & Cloud
+            </h4>
+            <div class="skills-grid">
+              <div class="skill-item">GCP</div>
+              <div class="skill-item">AWS</div>
+              <div class="skill-item">Docker</div>
+              <div class="skill-item">Git</div>
+              <div class="skill-item">GitHub</div>
+              <div class="skill-item">GitHub Actions</div>
+              <div class="skill-item">CI/CD</div>
+              <div class="skill-item">Linux</div>
+            </div>
+          </div>
+
+          <div>
+            <h4
+              style="
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                color: var(--text-muted);
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+              "
+            >
+              Data & Tools
+            </h4>
+            <div class="skills-grid">
+              <div class="skill-item">MySQL</div>
+              <div class="skill-item">PostgreSQL</div>
+              <div class="skill-item">Oracle</div>
+              <div class="skill-item">MongoDB</div>
+              <div class="skill-item">Redis</div>
+              <div class="skill-item">SQLite</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <p style="margin-bottom: 2rem">
+          I'm always open to new opportunities and connect with people. Whether
+          you have a question or just want to say hi, I'll get back to you as
+          soon as possible!
+        </p>
+        <a href="mailto:moyousryaboulhoda@gmail.com" class="btn"
+          >Say Hello via Email</a
+        >
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; <span id="year"></span> Mohamed Yousry. All rights reserved.</p>
-            <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-        </div>
+      <div class="container">
+        <p>
+          Copyright &copy; <span id="year"></span> <a href="https://moyousryaboulhoda.github.io">moyousryaboulhoda.github.io</a> All Rights Reserved
+        </p>
+        <script>
+          document.getElementById("year").textContent = new Date().getFullYear()
+        </script>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="gallery-modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <div class="modal-body">
+          <div class="modal-media-container" id="modal-media-container"></div>
+          <div class="modal-info-container">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <script src="script.js"></script>
+  </body>
 </html>
